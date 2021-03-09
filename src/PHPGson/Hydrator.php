@@ -55,8 +55,8 @@ class Hydrator
     private static function hydrateUsingMethods(&$object, array $methods)
     {
         foreach ($methods as $key => $value) {
-            $setterName = 'set' . ucfirst($key);
-            $getterName = 'get' . ucfirst($key);
+            $setterName = 'set' . self::toCamelCase($key, true);
+            $getterName = 'get' . self::toCamelCase($key, true);
             if (is_array($value)) {
                 if (method_exists($object, $getterName)) {
                     try {
@@ -80,6 +80,20 @@ class Hydrator
             }
         }
         return false;
+    }
+
+    /**
+     * @param $str
+     * @param bool $first_letter
+     * @return string
+     */
+    private static function toCamelCase($str, $first_letter = false) {
+        $arr = explode('_', $str);
+        foreach ($arr as $key => $value) {
+            $cond = $key > 0 || $first_letter;
+            $arr[$key] = $cond ? ucfirst($value) : $value;
+        }
+        return implode('', $arr);
     }
 
     /**
