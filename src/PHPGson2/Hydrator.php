@@ -1,22 +1,22 @@
 <?php
 /**
- * PHPGson Library
+ * PHPGson2 Library
  * Simple entity mapper for PHP applications
  * with minimum requirements and dependencies
  *
  * @author Rafal Martinez-Marjanski
- * @package PHPGson
+ * @package PHPGson2
  * @license MIT
  */
 
 
-namespace PHPGson;
+namespace PHPGson2;
 use InvalidArgumentException;
-use PHPGson\Exception\ClassNotFoundException;
+use PHPGson2\Exception\ClassNotFoundException;
 
 /**
  * Class Hydrator
- * @package PHPGson
+ * @package PHPGson2
  */
 class Hydrator
 {

@@ -1,6 +1,6 @@
 {
-  "name": "archangeldesign/php-gson",
-  "description": "PHP GSON equivalent - simple entity mapper. JSON to object and object to JSON",
+  "name": "johyunchol/php-gson2",
+  "description": "PHP GSON equivalent - simple entity mapper. JSON to object and object to JSON. from archangeldesign/php-gson",
   "license": "BSD-3-Clause",
   "type": "library",
   "keywords": [
@@ -8,7 +8,7 @@
     "entity",
     "mapper"
   ],
-  "version": "0.2",
+  "version": "0.2.1",
   "authors": [
     {
       "name": "Rafal Martinez-Marjanski"
@@ -17,7 +17,7 @@
   "homepage": "https://archangeldesign.github.io/php-gson/",
   "autoload": {
     "psr-0": {
-      "PHPGson" : "src/"
+      "PHPGson2" : "src/"
     }
   },
   "require": {

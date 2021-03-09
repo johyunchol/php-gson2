@@ -1,6 +1,6 @@
 <?php
 
-use PHPGson\Gson;
+use PHPGson2\Gson;
 
 include_once 'MainObject.php';
 

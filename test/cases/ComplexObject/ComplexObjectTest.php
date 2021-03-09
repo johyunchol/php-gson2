@@ -1,6 +1,6 @@
 <?php
 
-use PHPGson\Extractor;
+use PHPGson2\Extractor;
 
 require_once ROOT . '/test/abstraction/TestInterface.php';
 

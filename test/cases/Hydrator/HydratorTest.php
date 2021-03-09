@@ -1,6 +1,6 @@
 <?php
 
-use PHPGson\Hydrator;
+use PHPGson2\Hydrator;
 
 include_once 'HydratorTestObject.php';
 include_once 'ComplexHydrationObject.php';
@@ -20,7 +20,7 @@ class HydratorTest implements TestInterface
         Hydrator::hydrate(
             $complexObject,
             '{"age":35, "hydratorTestObject":{"username":"raff"}}',
-            \PHPGson\Extractor::EXTRACTION_MODE_METHOD,
+            \PHPGson2\Extractor::EXTRACTION_MODE_METHOD,
             ComplexHydrationObject::class
         );
         if ($complexObject->getAge() !== 35)

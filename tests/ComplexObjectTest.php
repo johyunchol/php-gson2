@@ -1,17 +1,17 @@
 <?php
 
 /**
- * PHPGson Library
+ * PHPGson2 Library
  * Simple entity mapper for PHP applications
  * with minimum requirements and dependencies
  *
  * @author Rafal Martinez-Marjanski
- * @package PHPGson
+ * @package PHPGson2
  * @license MIT
  */
 
-use PHPGson\Extractor;
-use PHPGson\Gson;
+use PHPGson2\Extractor;
+use PHPGson2\Gson;
 use PHPUnit\Framework\TestCase;
 
 require_once 'entity/ComplexObject.php';
