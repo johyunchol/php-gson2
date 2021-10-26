@@ -25,11 +25,22 @@
     "ext-json": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8"
+    "phpunit/phpunit": "^8",
+    "elendev/composer-push": "^0.7.0"
   },
   "suggest": {
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
 
+  "extra": {
+    "push": {
+      "url": "http://101.79.8.160:8081/repository/composer-release/",
+      "type": "nexus",
+      "ssl-verify": false,
+      "username": "deve@last30min.com",
+      "password": "zxcv7430!",
+      "ignore-by-git-attributes": true
+    }
+  }
 }
